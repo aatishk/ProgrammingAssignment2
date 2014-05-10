@@ -19,28 +19,27 @@ makeCacheMatrix <- function(x = matrix()) {
 
 	## 1. set the value of the matrix (set)	
 	set <- function(y) {
-        x <<- y
+		x <<- y
 		inv <<- NULL 
 	}
 	
 	## 2. get the value of the matrix (get)	
-	get <- function()
+	get <- function() {
 		x
+	}
 	
 	## 3. set the value of the inverse (setinverse)	
-	setinverse <- function(inverse) 
+	setinverse <- function(inverse) {
 		inv <<- inverse
-	
+	}
+
 	## 4. get the value of the inverse (getinverse)
-	getinverse <- function() 
+	getinverse <- function() {
 		inv
-	
+	}
+
 	## create the special "vector" containing list of functions
-	list(set = set, 
-		 get = get,
-     	 setinverse = setinverse,
-     	 getinverse = getinverse
-		)
+	list(set = set, get = get, setinverse = setinverse, getinverse = getinverse)
 }
 
 
