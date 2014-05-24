@@ -1,7 +1,3 @@
-## Put comments here that give an overall description of what your
-## functions do
-
-## Write a short comment describing this function
 ######################################################################
 ##																	
 ## makeCacheMatrix creates creates a special "vector", which is 	
@@ -42,8 +38,6 @@ makeCacheMatrix <- function(x = matrix()) {
 	list(set = set, get = get, setinverse = setinverse, getinverse = getinverse)
 }
 
-
-## Write a short comment describing this function
 ##############################################################################
 ##																			
 ## cacheSolve calculates the inverse of the special "vector" created		 
